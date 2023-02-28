@@ -6,7 +6,7 @@ import logo_mark from "../Assets/logo_mark.84dd8525.svg";
 const Hero = () => {
   return (
     <div className="relative">
-      <img src={hero} className="rounded-[70px] border  heroIm" />
+      <img src={hero} alt="hero" className="rounded-[70px] border  heroIm" />
       <div className="absolute lg:top-40 top-20 w-full">
         <div className="flex flex-col items-center justify-center ">
           <img src={logo_mark} alt="logo_mark" className="w-20"/>

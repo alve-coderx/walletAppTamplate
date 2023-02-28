@@ -1,7 +1,6 @@
 import React from "react";
 import Hero from "./Hero";
 import logo from "../Assets/logo.svg";
-import Footer from "./Footer";
 
 const links = [
   { name: "PRODUCTS", id: 1 },
