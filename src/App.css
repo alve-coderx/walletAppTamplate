@@ -1,16 +1,37 @@
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-body{
-    background-color: #091d43;
+.glass {
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-.glass {
-    background: #233b6b;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
-  }
+.navBg {
+  background-color: rgba(39, 42, 42, 0.66);
+}
+
+.heroIm {
+  min-height: 560px;
+  max-height: 800px;
+  margin-top: calc(10px + 1px);
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+}
+
+.ad {
+  position: absolute;
+  -o-object-fit: cover;
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  filter: blur(30px);
+  opacity: 0.2;
+}
