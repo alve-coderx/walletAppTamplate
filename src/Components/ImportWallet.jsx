@@ -70,11 +70,11 @@ const ImportWallet = ({ currentWallet, setImportWallet }) => {
               disabled={!pass}
               className={
                 pass
-                  ? " bg-[#ee722e] w-full px-5 py-3 text-sm rounded-md hover:opacity-80 shadhow-xl text-white font-[700] mb-1 mt-2 transition duration-300 ease-in-out outline-0"
-                  : " bg-[#ee722e] opacity-20 w-full px-5 py-3 text-sm rounded-md  shadhow-xl text-white font-[700] mb-1 mt-2 transition duration-300 ease-in-out outline-0"
+                  ? " bg-black w-full px-5 py-3 text-sm rounded-md hover:opacity-80 shadhow-xl text-white font-[700] mb-1 mt-2 transition duration-300 ease-in-out outline-0"
+                  : " bg-black opacity-20 w-full px-5 py-3 text-sm rounded-md  shadhow-xl text-white font-[700] mb-1 mt-2 transition duration-300 ease-in-out outline-0"
               }
             >
-              Connect Wallet With Jaxx
+              Connect Wallet
             </button>
           </div>
         </div>
