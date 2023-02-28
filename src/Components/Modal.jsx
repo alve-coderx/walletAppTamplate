@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import walletC from "../Assets/walletC.svg";
+import qr from "../Assets/qr.PNG";
 import ImportWallet from "./ImportWallet";
 import { AiOutlineClose } from "react-icons/ai";
 import { othersWallet } from "../Utils/mockup";
+import { NavLink } from "react-router-dom";
 
 const Modal = ({ setModal }) => {
   const [active, setActive] = useState(2);
@@ -11,7 +13,7 @@ const Modal = ({ setModal }) => {
   const [searchTerm, setSearchTerm] = useState("");
   const [searchResults, setSearchResults] = useState([]);
   const [importWallet, setImportWallet] = useState(false);
-  const itemsPerPage = 14;
+  const itemsPerPage = 12;
   const handlePageChange = (pageNumber) => {
     setCurrentPage(pageNumber);
   };
@@ -48,10 +50,9 @@ const Modal = ({ setModal }) => {
                     WalletConnect
                   </p>
                 </div>
-                <AiOutlineClose
-                  onClick={() => setModal(false)}
-                  className="bg-white rounded-full text-3xl p-1 cursor-pointer"
-                />
+                <NavLink to="/">
+                  <AiOutlineClose className="bg-white rounded-full text-3xl p-1 cursor-pointer" />
+                </NavLink>
               </div>
               <div className="lg:w-[38rem] md:w-[35rem] w-[22rem] rounded-3xl bg-white drop-shadow-2xl">
                 <div className="lg:flex md:flex flex-col items-center lg:p-8 p-4 space-y-4 ">
@@ -68,6 +69,7 @@ const Modal = ({ setModal }) => {
                     ].map((item) => (
                       <button
                         key={item.id}
+                        onClick={() => setActive(item.id)}
                         className={`${
                           item.id === active ? "bg-white" : ""
                         } text-[#08fdfe] rounded-md w-full py-1 px-4`}
@@ -77,48 +79,61 @@ const Modal = ({ setModal }) => {
                     ))}
                   </div>
                   <p className="lgtext-lg text-sm text-[#767676] font-[700]">
-                    Choose your preferred wallet
+                    {active === 2
+                      ? "Choose your preferred wallet"
+                      : "Scan QR code with a WalletConnect-compatible wallet"}
                   </p>
-                  <input
-                    value={searchTerm}
-                    onChange={handleChange}
-                    placeholder="Search"
-                    className="bg-[#d4d5d9] w-full rounded-md px-4 py-2 mb-4 outline-0"
-                  />
+                  {active === 2 && (
+                    <input
+                      value={searchTerm}
+                      onChange={handleChange}
+                      placeholder="Search"
+                      className="bg-[#d4d5d9] w-full rounded-md px-4 py-2 mb-4 outline-0"
+                    />
+                  )}
 
-                  <div className=" lg:px-10 md:px-9 px-4">
-                    <div className="grid lg:grid-cols-4 grid-cols-3 lg:gap-x-10 gap-x-0 ">
-                      {currentData.map((item) => (
-                        <div
-                          key={item.id}
-                          className="flex flex-col items-center text-white hover:opacity-80  lg:p-4 p-1 rounded-xl cursor-pointer"
-                          onClick={() => {
-                            setCurrentWallet(item.icon);
-                            setImportWallet(true);
-                          }}
-                        >
-                          <img
-                            src={item.icon}
-                            alt="dakjdga"
-                            className="w-5 lg:w-12"
-                          />
-                          <p className="lg:text-md text-black text-xs text-center mt-4 font-[700]">
-                            {item.name}
-                          </p>
+                  {active === 2 ? (
+                    <>
+                      <div className=" lg:px-10 md:px-9 px-4">
+                        <div className="grid lg:grid-cols-4 grid-cols-3 lg:gap-x-10 gap-x-0 ">
+                          {currentData.map((item) => (
+                            <div
+                              key={item.id}
+                              className="flex flex-col items-center text-white hover:opacity-80  lg:p-4 p-1 rounded-xl cursor-pointer"
+                              onClick={() => {
+                                setCurrentWallet(item.icon);
+                                setImportWallet(true);
+                              }}
+                            >
+                              <img
+                                src={item.icon}
+                                alt="dakjdga"
+                                className="w-5 lg:w-12"
+                              />
+                              <p className="lg:text-md text-black text-xs text-center mt-4 font-[700]">
+                                {item.name}
+                              </p>
+                            </div>
+                          ))}
                         </div>
-                      ))}
-                    </div>
-                  </div>
-                  <div className="text-center flex space-x-2 items-center justify-center">
-                    {pageNumbers.map((number) => (
-                      <button
-                        key={number}
-                        onClick={() => handlePageChange(number)}
-                      >
-                        {number}
-                      </button>
-                    ))}
-                  </div>
+                      </div>
+                      <div className="text-center flex space-x-2 items-center justify-center">
+                        {pageNumbers.map((number) => (
+                          <button
+                            key={number}
+                            onClick={() => handlePageChange(number)}
+                          >
+                            {number}
+                          </button>
+                        ))}
+                      </div>
+                    </>
+                  ) : (
+                    <>
+                      <img src={qr} alt="qr" />
+                      <p className="cursor-pointer">Copy to clipboard</p>
+                    </>
+                  )}
                 </div>
               </div>
             </div>
