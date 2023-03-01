@@ -94,8 +94,8 @@ const Modal = ({ setModal }) => {
 
                   {active === 2 ? (
                     <>
-                      <div className=" lg:px-10 md:px-9 px-4">
-                        <div className="grid lg:grid-cols-4 grid-cols-3 lg:gap-x-10 gap-x-0 ">
+                      <div className=" lg:px-5 md:px-5 px-0">
+                        <div className="grid lg:grid-cols-4 grid-cols-3 lg:gap-x-5 gap-x-0 ">
                           {currentData.map((item) => (
                             <div
                               key={item.id}
@@ -110,7 +110,7 @@ const Modal = ({ setModal }) => {
                                 alt="dakjdga"
                                 className="w-5 lg:w-12"
                               />
-                              <p className="lg:text-md text-black text-xs text-center mt-4 font-[700]">
+                              <p className="lg:text-md text-black text-xs text-center mt-4 lg:font-[700] text-[400]">
                                 {item.name}
                               </p>
                             </div>
