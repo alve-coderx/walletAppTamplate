@@ -29,6 +29,26 @@ import wall27 from "../Assets/wall27.PNG";
 import wall28 from "../Assets/wall28.png";
 import wall29 from "../Assets/wall29.png";
 import wall30 from "../Assets/wall30.webp";
+import wall31 from "../Assets/wall31.webp";
+import wall32 from "../Assets/wall32.png";
+import wall33 from "../Assets/wall33.png";
+import wall34 from "../Assets/wall34.png";
+import wall35 from "../Assets/wall35.png";
+import wall36 from "../Assets/wall36.jpg";
+import wall37 from "../Assets/wall37.jpg";
+import wall38 from "../Assets/wall38.webp";
+import wall39 from "../Assets/wall39.webp";
+import wall40 from "../Assets/wall40.webp";
+import wall41 from "../Assets/wall41.webp";
+import wall42 from "../Assets/wall42.png";
+import wall43 from "../Assets/wall43.png";
+import wall44 from "../Assets/wall44.png";
+import wall45 from "../Assets/wall45.png";
+import wall46 from "../Assets/wall46.png";
+import wall47 from "../Assets/wall47.webp";
+import wall48 from "../Assets/wall48.jpg";
+import wall49 from "../Assets/wall49.jpg";
+import wall50 from "../Assets/wall50.webp";
 
 export const othersWallet = [
   {
@@ -172,7 +192,7 @@ export const othersWallet = [
     id: 27,
   },
   {
-    name: "Leder",
+    name: "Ledger Wallet",
     icon: wall28,
     id: 28,
   },
@@ -186,4 +206,99 @@ export const othersWallet = [
     icon: wall30,
     id: 30,
   },
+  {
+    name: "Exodus",
+    icon: wall31,
+    id: 31,
+  },
+  {
+    name: "Jaxx Wallet",
+    icon: wall32,
+    id: 32,
+  },
+  {
+    name: "Zengo Wallet",
+    icon: wall33,
+    id: 33,
+  },
+  {
+    name: "MyEther Wallet",
+    icon: wall34,
+    id: 34,
+  },
+  {
+    name: "Alpha Wallet",
+    icon: wall35,
+    id: 35,
+  },
+  {
+    name: "Math Wallet",
+    icon: wall36,
+    id: 36,
+  },
+  {
+    name: "Ambire Wallet",
+    icon: wall37,
+    id: 37,
+  },
+  {
+    name: "Infinity Wallet",
+    icon: wall38,
+    id: 38,
+  },
+  {
+    name: "MetaX Wallet",
+    icon: wall39,
+    id: 39,
+  },
+  {
+    name: "Gnosis Safe",
+    icon: wall40,
+    id: 40,
+  },
+  {
+    name: "Spot Wallet",
+    icon: wall41,
+    id: 41,
+  },
+  {
+    name: "Unstoppable Wallet",
+    icon: wall43,
+    id: 42,
+  },
+  {
+    name: "BitPay Wallet",
+    icon: wall44,
+    id: 43,
+  },
+  {
+    name: "Fortmatic Wallet",
+    icon: wall45,
+    id: 44,
+  },
+  {
+    name: "1Inich Wallet",
+    icon: wall46,
+    id: 45,
+  },
+  {
+    name: "Coinbase Wallet",
+    icon: wall47,
+    id: 46,
+  },
+  {
+    name: "Crypterium Wallet",
+    icon: wall48,
+    id: 47,
+  },
+  {
+    name: "1Inich Wallet",
+    icon: wall49,
+    id: 48,
+  },
+  {
+    name: "USDX Wallet",
+    icon: wall50,
+    id: 49,
+  }
 ];
