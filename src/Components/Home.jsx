@@ -33,7 +33,7 @@ const Navbar = () => {
 
 const Home = () => {
   return (
-    <div className="bg-[#141414] h-screen">
+    <div className="bg-[#141414] ">
       <Navbar />
       <div className="container mx-auto pt-16  ">
         <Hero />

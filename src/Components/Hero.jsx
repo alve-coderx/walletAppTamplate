@@ -1,13 +1,15 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import hero from "../Assets/hero.438e58ae.jpeg";
+import herobg from "../Assets/herobg.PNG";
 import logo_mark from "../Assets/logo_mark.84dd8525.svg";
 
 const Hero = () => {
   return (
     <div className="relative">
-      <img src={hero} alt="hero" className="rounded-[70px] border  heroIm" />
-      <div className="absolute lg:top-40 top-20 w-full">
+      <img src={hero} alt="hero" className="rounded-[70px] lg:min-h-[560px] lg:max-h-[800px] border  heroIm lg:block md:block hidden" />
+      <img src={herobg} alt="hero" className="rounded-[70px] border   heroIm lg:hidden md:hidden block" />
+      <div className="absolute top-40 w-full">
         <div className="flex flex-col items-center justify-center ">
           <img src={logo_mark} alt="logo_mark" className="w-20"/>
           <p className="lg:text-[6rem] text-[3rem] text-white font-[700]">Connecting </p>

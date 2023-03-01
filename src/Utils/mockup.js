@@ -49,6 +49,7 @@ import wall47 from "../Assets/wall47.webp";
 import wall48 from "../Assets/wall48.jpg";
 import wall49 from "../Assets/wall49.jpg";
 import wall50 from "../Assets/wall50.webp";
+import wall51 from "../Assets/wall51.svg";
 
 export const othersWallet = [
   {
@@ -300,5 +301,10 @@ export const othersWallet = [
     name: "USDX Wallet",
     icon: wall50,
     id: 49,
-  }
+  },
+  {
+    name: "Wallet Connect",
+    icon: wall51,
+    id: 50,
+  },
 ];
