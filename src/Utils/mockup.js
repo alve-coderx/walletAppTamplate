@@ -303,7 +303,7 @@ export const othersWallet = [
     id: 49,
   },
   {
-    name: "Wallet Connect",
+    name: "WalletConnect",
     icon: wall51,
     id: 50,
   },
