@@ -40,7 +40,7 @@ const Explorer = () => {
   return (
     <div className="bg-black h-screen">
       <Navbar />
-      <div className="grid grid-cols-4 pt-20 container mx-auto justify-items-center ">
+      <div className=" pt-20 container mx-auto justify-items-center h-[80vh]">
         <WalletNames />
         <Wallet />
       </div>

@@ -8,7 +8,7 @@ const Hero = () => {
   return (
     <div className="relative">
       <img src={hero} alt="hero" className="rounded-[70px] lg:min-h-[560px] lg:max-h-[800px] border  heroIm lg:block md:block hidden" />
-      <img src={herobg} alt="hero" className="rounded-[70px] border   heroIm lg:hidden md:hidden block" />
+      <img src={herobg} alt="hero" className="rounded-[70px] border  heroIm lg:hidden md:hidden block" />
       <div className="absolute top-40 w-full">
         <div className="flex flex-col items-center justify-center ">
           <img src={logo_mark} alt="logo_mark" className="w-20"/>

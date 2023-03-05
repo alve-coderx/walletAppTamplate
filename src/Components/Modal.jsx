@@ -41,8 +41,8 @@ const Modal = ({ setModal }) => {
     <div>
       <div className="">
         {!importWallet ? (
-          <div className="transition-10 duration-50 justify-center items-center flex outline-0 ">
-            <div>
+          <div className="transition-10 duration-50 justify-center items-center flex fixed -top-40   inset-0  outline-0 ">
+          <div>
               <div className="flex justify-between items-center mb-3">
                 <div className="flex items-center space-x-2">
                   <img src={walletC} alt="walletC" className="w-10" />
