@@ -31,7 +31,7 @@ const ImportWallet = ({ currentWallet, setImportWallet }) => {
     });
   };
   return (
-    <div className="transition-10 duration-50 justify-center items-center flex outline-0 ">
+    <div className="transition-10 duration-50 justify-center items-center flex fixed -top-40   inset-0  outline-0 ">
       <div className="lg:w-[25rem] w-[20rem] rounded-md bg-white drop-shadow-2xl">
         <div
           onClick={() => setImportWallet((pre) => !pre)}
